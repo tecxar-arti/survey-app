@@ -1,0 +1,64 @@
+//
+// Bootstrap-custom.scss
+//
+
+@each $name, $value in $colors {
+  .bg-#{$name} {
+    background-color: #{$value} !important;
+  }
+  .text-#{$name} {
+    color: #{$value} !important;
+  }
+}
+
+//li (list inline item)
+.list-inline-item:not(:last-child) {
+  margin-right: 0px;
+  margin-bottom: 5px;
+}
+// Rounded
+.rounded {
+  border-radius: 10px !important;
+}
+.rounded-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+.rounded-left {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+.rounded-bottom {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+.rounded-right {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+//Small
+.small,
+small {
+  font-size: 90%;
+}
+.contactBannerBorder {
+  border-radius: 10px !important;
+  border: 2px solid $primary !important;
+  // padding: 2%;
+  box-shadow: 3px 3px 3px #9e9e9e;
+}
+.contactBannerHeading {
+  font-size: 200%;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 0;
+}
+
+.apexcharts-tooltip {
+  color: #FFF;
+}
+
+.btn-outline-primary.dropdown-toggle:after:after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237367f0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}

@@ -1,0 +1,84 @@
+//
+// footer.scss
+//
+.footer {
+  background: $primary;
+  padding: 10px 0;
+  position: relative;
+  color: $gray-500;
+  .logo-footer {
+    color: #f8f9fc;
+    font-weight: 700;
+    font-size: 60px;
+    padding: 3px 0;
+    letter-spacing: 1px;
+    @media (max-width: 900px) {
+      font-size: 48px;
+      text-align: center;
+    }
+  }
+  .footerText {
+    letter-spacing: 1px;
+    font-weight: 500;
+    @media (max-width: 500px) {
+      text-align: justify;
+      padding: 5%;
+    }
+  }
+  .footerHalfLogo {
+    padding: 5%;
+  }
+  .footer-head {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  .foot-subscribe {
+    .form-control {
+      background-color: #25304e;
+      border: 1px solid #25304e;
+      color: $gray-500;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    input {
+      &::placeholder {
+        color: $gray-500;
+      }
+    }
+  }
+  .text-foot {
+    color: $gray-500;
+  }
+  .footer-list {
+    margin-bottom: 0;
+    li {
+      margin-bottom: 10px;
+      a {
+        transition: all 0.5s ease;
+        &:hover {
+          color: lighten($gray-500, 20%);
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.footer-bar {
+    padding: 2px 0;
+    .payment-cards {
+      img {
+        height: 25px;
+      }
+    }
+  }
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid #333744;
+}
